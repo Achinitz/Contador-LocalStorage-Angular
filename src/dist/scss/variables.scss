@@ -1,0 +1,168 @@
+$primary-color: #AF7EEB;
+$secondary-color: #939CBD;
+$tertiary-color: #ffffff;
+
+$primary-background-color: #E3E9FF;
+$secondary-background-color: $tertiary-color;
+$tertiary-background-color: $primary-color;
+
+$primary-text-color: $secondary-color;
+$secondary-text-color: $tertiary-color;
+
+$danger-color: #FF002E;
+
+
+
+
+
+
+
+
+
+
+
+/*
+//########## BEGIN ###########
+//importando outras páginas para ser usado aqui
+@import url("../../styles.scss");
+//########### END ############
+
+//EM CSS O QUE ESTÁ EM BAIXO É SEMPRE PRIORIDADE...
+
+//########## BEGIN ###########
+//Variaveis
+$color-orange: orange;
+$color-roxo: purple;
+$color-amarelo: yellow;
+$color-primaria: rgb(93, 93, 124);
+//########### END ############
+
+//########## BEGIN ###########
+//códigos
+/*
+.btn{
+  width: 200px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+}
+
+.btn-laranja{
+  @extend .btn;
+  background: $color-orange;
+}
+*/
+//########### END ############
+
+//########## BEGIN ###########
+//Mixin Utilizado para passar vários elementos, com cores diferentes usando os mesmos atributos :)
+//Exemplo código ruim e sem mixin
+/*
+.btn-laranja{
+  @extend btn;
+  background: $color-orange;
+}
+
+.btn-amarelo{
+  @extend btn;
+  background: $color-orange;
+}
+
+.btn-roxo{
+  @extend btn;
+  background: $color-orange;
+}
+//########### END ############
+
+//########## BEGIN ###########
+//Código com mixin obs:  variaveis e mixin's vem sempre antes do código
+@mixin button-style($background, $color){
+  background: $background;
+  color: $color;
+  //Função prontas do CSS para usar de estilo nas páginas
+  &:hover{
+    background: darken($background, 50%);
+  }
+}
+
+/*
+.btn-laranja{
+  @extend btn;
+  @include button-style(orange, #fff);
+}
+
+.btn-amarelo{
+  @extend btn;
+  background: $color-orange;
+  //@include button-style(orange, #fff);
+}
+
+.btn-roxo{
+  @extend btn;
+  //background: $color-orange;
+  @include button-style(orange, #fff);
+}
+*/
+//########### END ############
+/*
+.btn{
+  width: 200px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+
+  &.btn-laranja{
+    @include button-style(orange, #fff);
+  }
+
+  &.btn-amarelo{
+    @include button-style(yellow, #fff);
+  }
+
+  &.btn-roxo{
+    @include button-style(purple, #fff);
+  }
+}
+
+
+header{
+  section{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    li a{
+      margin: 0px 15px;
+      color: $color-primaria;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+*/
